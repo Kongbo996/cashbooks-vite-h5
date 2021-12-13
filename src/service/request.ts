@@ -7,8 +7,7 @@ const MODE = import.meta.env.MODE // 环境变量
 type HeaderProps = HeadersDefaults & { 'X-Requested-With' : string, Authorization: string }
 
 const AxiosHeaders =  axios.defaults.headers as HeaderProps
-axios.defaults.baseURL = MODE === 'development' ? '' : 'http://81.68.165.190:7779'
-
+axios.defaults.baseURL = MODE === 'development' ? '' : 'http://kongbopro.top'
 axios.defaults.withCredentials = true
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 AxiosHeaders['X-Requested-With'] = 'XMLHttpRequest'
