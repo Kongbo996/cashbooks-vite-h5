@@ -8,6 +8,7 @@ type HeaderProps = HeadersDefaults & { 'X-Requested-With' : string, Authorizatio
 
 const AxiosHeaders =  axios.defaults.headers as HeaderProps
 axios.defaults.baseURL = MODE === 'development' ? '' : 'http://10.0.4.10:7779'
+
 axios.defaults.withCredentials = true
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 AxiosHeaders['X-Requested-With'] = 'XMLHttpRequest'

@@ -102,9 +102,9 @@ const Login:React.FC = () => {
       <Captcha charNum={4} onChange={handleCaptchaChange} />
     </Cell>
     <Cell>
-      <label className="text-light"> <Checkbox onChange={(e: any) => setIsChecked(e.target.checked)} />阅读并同意<a>《掘掘手札条款》</a></label>
+      <label className="text-light"> <Checkbox onChange={(e: any) => setIsChecked(e.target.checked)} />阅读并同意<a>《我的霸王条款》</a></label>
     </Cell>
-    <Button onClick={handleSubmit} block theme="primary">注册</Button>
+    <Button onClick={handleSubmit} block theme="primary">{isLogin ? '登录' : '注册'}</Button>
   </div>
 }
 
