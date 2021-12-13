@@ -13,7 +13,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:Kongbo996/cashbooks-vite-h5.git',
       path: '/root/cashbook-vite-h5',
-      'post-deploy': 'git reset --hard && git checkout main && git pull && npm i --production=false && npm run build && pm2 startOrReload ecosystem.config.js',
+      'post-deploy': 'git reset --hard && git checkout master && git pull && npm i --production=false && npm run build && pm2 startOrReload ecosystem.config.js',
       env: {
         NODE_ENV: 'production'
       }
