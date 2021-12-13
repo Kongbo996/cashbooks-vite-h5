@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'cashbook-vite-h5',
-      script: 'vite-cashbook-port-server.js'
+      script: 'vite-cashbook-port-serve.js'
     },
   ],
   deploy: {
